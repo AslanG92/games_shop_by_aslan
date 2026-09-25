@@ -2,6 +2,13 @@
 	--primary: #0d171f;
 	--second: #0998a8;
 	--bgColor: #2d3531;
+
+	--sectionBoxShadow: -5px -5px 15px rgba(255, 255, 255, 0.1), 5px 5px 15px rgba(0, 0, 0, 0.35);
+	--buttonHoverBoxShadow: -5px -5px 15px rgba(255, 255, 255, 0.1), 5px 5px 15px rgba(0, 0, 0, 0.4);
+	--mainBoxShadow: -5px -5px 15px rgba(255, 255, 255, 0.15), 5px 5px 15px rgba(0, 0, 0, 0.35),
+		inset -5px -5px 15px rgba(255, 255, 255, 0.15), inset 5px 5px 15px rgba(0, 0, 0, 0.35);
+
+
 }
 
 * {
