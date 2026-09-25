@@ -1,5 +1,3 @@
-import cls from "./SideMenu.module.css";
-
 export default function NavListSocialItem({ item }) {
 	return (
 		<li>

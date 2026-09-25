@@ -16,8 +16,9 @@
 		display: inline-flex;
 		align-items: center;
 		gap: 25px;
+		padding: 10px;
 		color: var(--bgColor);
-		font-size: 35px;
+		font-size: 30px;
 		font-weight: 900;
 		letter-spacing: 1px;
 		text-transform: uppercase;
@@ -43,19 +44,21 @@
 			text-decoration: none;
 			color: #dfb15b;
 			font-size: 25px;
+			font-weight: 200;
 			letter-spacing: 1px;
 			display: inline-flex;
 			align-items: center;
 			gap: 35px;
 			transition: 0.5s;
 			background: var(--bgColor);
-			border-radius: 20px;
+			border-radius: 15px;
 			padding: 10px 10px;
 			width: 100%;
 
 			&:hover,
 			&:active {
-				box-shadow: var(--buttonHoverBoxShadow);
+				color: #6b7c74;
+				box-shadow: var(--navListItemHoverBoxShadow);
 			}
 		}
 	}
@@ -63,20 +66,24 @@
 	.social {
 		position: absolute;
 		bottom: 50px;
+		padding-left: 10px;
 		display: flex;
 		align-items: center;
 		list-style: none;
-		gap: 20px;
+		gap: 10px;
 		transition: 0.5s;
 
 		a {
+			padding: 5px 10px;
 			text-decoration: none;
 			color: #d97736;
 			font-size: 30px;
+			border-radius: 12px;
 			transition: 0.3s;
 
 			&:hover {
 				color: #6b7c74;
+				box-shadow: var(--socialLinksHoverBoxShadow);
 			}
 		}
 	}
