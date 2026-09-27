@@ -1,0 +1,141 @@
+.header {
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 100%;
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	padding: 20px 30px;
+	z-index: 1000 !important;
+	background: transparent;
+
+	.menu {
+		padding: 5px 15px;
+		border-radius: 12px;
+		font-size: 30px;
+		color: #dfb15b;
+		box-shadow: var(--linksBoxShadow);
+
+		&:hover {
+			box-shadow: 0 0 1px #6b7c74;
+		}
+
+		&:active {
+			box-shadow: var(--linksInsetBoxShadow);
+			transform: scale(0.95);
+		}
+	}
+
+	.userItems {
+		display: inline-flex;
+		align-items: center;
+		gap: 20px;
+
+		.icon {
+			position: relative;
+			color: #dfb15b;
+			font-size: 25px;
+			width: 50px;
+			height: 50px;
+			border-radius: 10px;
+			box-shadow: var(--linksBoxShadow);
+			display: flex;
+			justify-content: center;
+			align-items: center;
+			text-decoration: none;
+
+			&:hover {
+				box-shadow: 0 0 1px #6b7c74;
+				color: #6b7c74;
+			}
+
+			&:active {
+				box-shadow: var(--linksInsetBoxShadow);
+				transform: scale(0.95);
+			}
+
+			&.clicked {
+				box-shadow: var(--linksInsetBoxShadow);
+				transform: scale(0.95);
+				color: #6b7c74 !important;
+
+				i {
+					color: #6b7c74;
+				}
+			}
+
+			.like,
+			.bag {
+				position: absolute;
+				right: 0;
+				bottom: 10px;
+				font-size: 13px;
+				font-weight: 600;
+				width: 20px;
+				height: 20px;
+				color: #fff;
+				background: #d97736;
+				border-radius: 50%;
+				display: flex;
+				justify-content: center;
+				align-items: center;
+			}
+		}
+
+		.avatar {
+			width: 150px;
+			height: 50px;
+			padding: 10px 20px;
+			display: flex;
+			align-items: center;
+			gap: 15px;
+			border-radius: 10px;
+			box-shadow: var(--linksBoxShadow);
+
+			&:hover {
+				box-shadow: 0 0 1px #6b7c74;
+
+				.user span,
+				.user a {
+					color: #6b7c74 !important;
+				}
+			}
+
+			&:active {
+				box-shadow: var(--linksInsetBoxShadow);
+				transform: scale(0.95);
+			}
+
+			&.clicked {
+				box-shadow: var(--linksInsetBoxShadow);
+				transform: scale(0.95);
+
+				.user span,
+				.user a {
+					color: #6b7c74 !important;
+				}
+			}
+
+			a {
+				font-size: 30px;
+			}
+
+			.user {
+				display: flex;
+				flex-direction: column;
+
+				span {
+					color: #dfb15b;
+					font-size: 11px;
+				}
+
+				a {
+					font-size: 9px;
+					text-decoration: none;
+					color: #dfb15b;
+				}
+			}
+		}
+	}
+}

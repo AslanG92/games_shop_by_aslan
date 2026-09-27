@@ -2,8 +2,8 @@
 	--bgColor: #2d3531;
 
 	--sectionBoxShadow: -5px -5px 15px rgba(255, 255, 255, 0.1), 5px 5px 15px rgba(0, 0, 0, 0.35);
-	--navListItemHoverBoxShadow: -5px -5px 10px rgba(255, 255, 255, 0.1), 5px 5px 10px rgba(0, 0, 0, 0.4);
-	--socialLinksHoverBoxShadow: -3px -3px 6px rgba(255, 255, 255, 0.1), 3px 3px 6px rgba(0, 0, 0, 0.4);
+	--linksBoxShadow: -3px -3px 6px rgba(255, 255, 255, 0.1), 3px 3px 6px rgba(0, 0, 0, 0.4);
+	--linksInsetBoxShadow: inset -2px -2px 4px rgba(255, 255, 255, 0.1), inset 2px 2px 4px rgba(0, 0, 0, 0.4);
 	--mainBoxShadow: -5px -5px 15px rgba(255, 255, 255, 0.15), 5px 5px 15px rgba(0, 0, 0, 0.35),
 		inset -5px -5px 15px rgba(255, 255, 255, 0.15), inset 5px 5px 15px rgba(0, 0, 0, 0.35);
 

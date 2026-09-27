@@ -24,4 +24,10 @@
 		box-shadow: var(--sectionBoxShadow);
 		transition: 1s;
 	}
+
+	.active {
+		position: relative;
+		width: 93%;
+		transition: 0.6s;
+	}
 }
