@@ -7,7 +7,7 @@ export default function UserItems({ activeIcon, handleIconClick, userImage }) {
 		<div className={cls.userItems}>
 			<a
 				href="#"
-				className={`${cls.icon} ${activeIcon === "heart" ? cls.clicked : ""}`}
+				className={`${cls.icon} ${activeIcon === "heart" ? cls.clicked : undefined}`}
 				onClick={(e) => handleIconClick(e, "heart")}
 			>
 				<i className="bi bi-heart-fill"></i>
@@ -16,14 +16,14 @@ export default function UserItems({ activeIcon, handleIconClick, userImage }) {
 
 			<a
 				href="#"
-				className={`${cls.icon} ${activeIcon === "bag" ? cls.clicked : ""}`}
+				className={`${cls.icon} ${activeIcon === "bag" ? cls.clicked : undefined}`}
 				onClick={(e) => handleIconClick(e, "bag")}
 			>
 				<i className="bi bi-bag-check-fill"></i>
 				<span className={cls.bag}>0</span>
 			</a>
 
-			<div className={`${cls.avatar} ${activeIcon === "avatar" ? cls.clicked : ""}`}>
+			<div className={`${cls.avatar} ${activeIcon === "avatar" ? cls.clicked : undefined}`}>
 				<a href="#" onClick={(e) => handleIconClick(e, "avatar")}>
 					<Image
 						src={userImage}

@@ -65,12 +65,12 @@
 				box-shadow: var(--linksInsetBoxShadow);
 				transform: scale(0.95);
 			}
-		}
 
-		.clicked {
-			box-shadow: var(--linksInsetBoxShadow);
-			transform: scale(0.95);
-			color: #6b7c74;
+			&.clicked {
+				box-shadow: var(--linksInsetBoxShadow);
+				transform: scale(0.95);
+				color: #6b7c74;
+			}
 		}
 	}
 

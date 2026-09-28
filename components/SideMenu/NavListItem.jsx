@@ -1,4 +1,4 @@
-import cls from "./SideMenu.module.css"; // Убедитесь, что путь к вашим стилям верный
+import cls from "./SideMenu.module.css";
 
 export default function NavListItem({ item, isClicked, onClick }) {
 	return (
@@ -10,7 +10,7 @@ export default function NavListItem({ item, isClicked, onClick }) {
 					onClick();
 					window.dispatchEvent(new Event("resetHeaderIcons"));
 				}}
-				className={`${cls.navLink} ${isClicked ? cls.clicked : ""}`}
+				className={`${cls.navLink} ${isClicked ? cls.clicked : undefined}`}
 			>
 				<i className={`bi ${item.icon}`}></i>
 				<span className={cls.navName}>{item.name}</span>
