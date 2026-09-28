@@ -20,10 +20,15 @@ export default function GameSlide({ game, active, toggleVideo }) {
 					<h2>{game.title}</h2>
 					<p>{game.description}</p>
 					<div className={cls.buttons}>
-						<a href="#" className={cls.orderBtn}>
+						<a href="#" className={cls.orderBtn} aria-label="order btn link">
 							Order Now
 						</a>
-						<a href="#" className={`${cls.playBtn} ${active ? "active" : undefined}`} onClick={toggleVideo}>
+						<a
+							href="#"
+							className={`${cls.playBtn} ${active ? "active" : undefined}`}
+							onClick={toggleVideo}
+							aria-label="play link"
+						>
 							<span className={cls.pause}>
 								<i className="bi bi-pause-fill"></i>
 							</span>

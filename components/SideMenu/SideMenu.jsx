@@ -27,6 +27,7 @@ export default function SideMenu({ active }) {
 					setActiveLinkId(null);
 					window.dispatchEvent(new Event("resetHeaderIcons"));
 				}}
+				aria-label="logo"
 			>
 				<i className="bi bi-controller"></i>
 				<span className={cls.brand}>{"Play"}</span>

@@ -1,8 +1,11 @@
 :global(.swiper) {
 	width: 90%;
-	padding-bottom: 30px;
-
-	--swiper-navigation-color: #ffffff !important;
+	padding: 30px 0;
+	margin-top: 10px;
+	margin-bottom: 30px;
+	border-radius: 15px;
+	box-shadow: var(--linksBoxShadow);
+	--swiper-navigation-color: #d97736 !important;
 }
 
 :global(.swiper-slide) {

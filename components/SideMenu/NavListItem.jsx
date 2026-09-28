@@ -11,6 +11,7 @@ export default function NavListItem({ item, isClicked, onClick }) {
 					window.dispatchEvent(new Event("resetHeaderIcons"));
 				}}
 				className={`${cls.navLink} ${isClicked ? cls.clicked : undefined}`}
+				aria-label="icon"
 			>
 				<i className={`bi ${item.icon}`}></i>
 				<span className={cls.navName}>{item.name}</span>

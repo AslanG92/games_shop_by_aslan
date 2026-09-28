@@ -4,7 +4,7 @@
 		"title": "God of war",
 		"description": "God of War (2018) is an action-adventure game developed by Santa Monica Studio that shifts the franchise [from Greek mythology to the Norse realm] of Midgard.",
 		"platform": "playstation pc",
-		"category": "action-adventure",
+		"category": "action-adventure hack-and-slash",
 		"rating": 10,
 		"discount": 0.2,
 		"price": 50,
@@ -16,9 +16,9 @@
 	{
 		"_id": 2,
 		"title": "God of war: Ragnarok",
-		"description": "God of war: Ragnarok Set as the direct sequel to the 2018 God of War, the game follows the duo as they journey through the Nine Realms to find answers before the prophesied end-of-days battle.",
+		"description": "God of War: Ragnarok Set as the direct sequel to the 2018 God of War, the game follows the duo as they journey through the Nine Realms to find answers before the prophesied end-of-days battle.",
 		"platform": "playstation pc",
-		"category": "action-adventure",
+		"category": "action-adventure hack-and-slash",
 		"rating": 10,
 		"discount": 0,
 		"price": 60,
@@ -32,7 +32,7 @@
 		"title": "The Last of Us: part 1",
 		"description": "The Last of Us Part I is a third-person action-adventure and survival game where you guide a hardened smuggler and an immune teenager through a ruined America.",
 		"platform": "playstation pc",
-		"category": "action-adventure",
+		"category": "action-adventure TPS",
 		"rating": 10,
 		"discount": 0.4,
 		"price": 40,
@@ -46,7 +46,7 @@
 		"title": "The Last of Us: part 2",
 		"description": "The Last of Us Part II is an action-adventure game set in a post-apocalyptic United States five years after the events of the original game.",
 		"platform": "playstation pc",
-		"category": "action-adventure",
+		"category": "action-adventure TPS",
 		"rating": 10,
 		"discount": 0.2,
 		"price": 60,
@@ -60,7 +60,7 @@
 		"title": "Uncharted 4: A Thief's End",
 		"description": "Uncharted 4: A Thief's End is a 2016 action-adventure game developed by Naughty Dog and published by Sony Interactive Entertainment.",
 		"platform": "playstation pc",
-		"category": "action-adventure",
+		"category": "action-adventure TPS",
 		"rating": 10,
 		"discount": 0.5,
 		"price": 50,
@@ -108,6 +108,552 @@
 		"price": 30,
 		"img": "/images/games/max.webp",
 		"video": "https://www.youtube.com/embed/4Uc_dbG7MR8",
+		"active": false
+	},
+
+	{
+		"_id": 9,
+		"title": "Grand Theft Auto V",
+		"description": "Grand Theft Auto V is a 2013 action-adventure, open-world game developed by Rockstar North and published by Rockstar Games.",
+		"platform": "playstation pc x-box",
+		"category": "open-world",
+		"rating": 9,
+		"price": 50,
+		"img": "/images/games/gta5.webp",
+		"video": "https://www.youtube.com/embed/hvoD7ehZPcM",
+		"active": false
+	},
+
+	{
+		"_id": 10,
+		"title": "Mad Max",
+		"description": "Mad Max is an open-world, third-person action-adventure video game that features heavy vehicular combat and brutal hand-to-hand melee fighting.",
+		"platform": "playstation pc x-box",
+		"category": "open-world",
+		"rating": 7.5,
+		"price": 35.85,
+		"img": "/images/games/mad_max.webp",
+		"video": "https://www.youtube.com/embed/FqLbCUGiDpA",
+		"active": false
+	},
+
+	{
+		"_id": 11,
+		"title": "Heavy Rain",
+		"description": "Heavy Rain is an interactive drama and psychological thriller video game developed by Quantic Dream.",
+		"platform": "playstation",
+		"category": "interactive",
+		"rating": 10,
+		"price": 45,
+		"img": "/images/games/rain.webp",
+		"video": "https://www.youtube.com/embed/YVYiJ3VSp60",
+		"active": false
+	},
+
+	{
+		"_id": 12,
+		"title": "Resident Evil 4: Remake",
+		"description": "Resident Evil 4 is a survival horror and third-person shooter video game developed and published by CAPCOM, released on March 24, 2023, as a complete remake of the 2005 classic Resident Evil 4.",
+		"platform": "playstation pc x-box",
+		"category": "TPS survival-horror",
+		"rating": 10,
+		"price": 70,
+		"img": "/images/games/re4.webp",
+		"video": "https://www.youtube.com/embed/Id2EaldBaWw",
+		"active": false
+	},
+
+	{
+		"_id": 13,
+		"title": "007 First Light",
+		"description": "007 First Light is an action-adventure video game developed by IO Interactive that tells the origin story of James Bond before he earned his 00 status.",
+		"platform": "playstation pc x-box",
+		"category": "action-adventure TPS",
+		"rating": 9,
+		"price": 65,
+		"img": "/images/games/007.webp",
+		"video": "https://www.youtube.com/embed/J4qY9DYE184",
+		"active": false
+	},
+
+	{
+		"_id": 14,
+		"title": "Battlefield V",
+		"description": "Battlefield V is a first-person shooter video game set in World War II, developed by DICE and published by Electronic Arts.",
+		"platform": "playstation pc x-box",
+		"category": "FPC",
+		"rating": 9.6,
+		"price": 52,
+		"img": "/images/games/battle5.webp",
+		"video": "https://www.youtube.com/embed/a7ZpQadiyqs",
+		"active": false
+	},
+
+	{
+		"_id": 15,
+		"title": "Battlefield 1",
+		"description": "Battlefield 1 is a first-person shooter video game set during World War I, developed by DICE and published by Electronic Arts in 2016.",
+		"platform": "playstation pc x-box",
+		"category": "FPC",
+		"rating": 10,
+		"price": 50,
+		"img": "/images/games/battlefield.webp",
+		"video": "https://www.youtube.com/embed/dXrPaKEuD7s?list=RDdXrPaKEuD7s",
+		"active": false
+	},
+
+	{
+		"_id": 16,
+		"title": "Cuphead",
+		"description": "Cuphead is a classic run-and-gun action video game developed by Studio MDHR that is heavily inspired by 1930s-style rubber hose animated cartoons.",
+		"platform": "playstation pc x-box",
+		"category": "platformer",
+		"rating": 10,
+		"price": 60,
+		"img": "/images/games/cup.webp",
+		"video": "https://www.youtube.com/embed/NN-9SQXoi50",
+		"active": false
+	},
+
+	{
+		"_id": 17,
+		"title": "Sleeping Dogs",
+		"description": "Sleeping Dogs is an open-world action-adventure video game set in a gritty version of Hong Kong.",
+		"platform": "playstation pc x-box",
+		"category": "open-world",
+		"rating": 6.5,
+		"price": 25,
+		"img": "/images/games/dogs.webp",
+		"video": "https://www.youtube.com/embed/lbGs8AJyT_Y",
+		"active": false
+	},
+
+	{
+		"_id": 18,
+		"title": "Doom Eternal",
+		"description": "Doom Eternal is an epic first-person shooter game where you play as the Doom Slayer to stop Hell's armies from destroying Earth and humanity.",
+		"platform": "playstation pc x-box",
+		"category": "FPC",
+		"rating": 10,
+		"price": 53,
+		"img": "/images/games/doom.webp",
+		"video": "https://www.youtube.com/embed/_oVwrpfo_QA",
+		"active": false
+	},
+
+	{
+		"_id": 19,
+		"title": "The Evil Within",
+		"description": "The Evil Within is a survival horror video game created by Shinji Mikami, the father of the Resident Evil series.",
+		"platform": "playstation pc x-box",
+		"category": "survival-horror",
+		"rating": 10,
+		"price": 43,
+		"img": "/images/games/evil.webp",
+		"video": "https://www.youtube.com/embed/uwJ0yS0pfaw",
+		"active": false
+	},
+
+	{
+		"_id": 20,
+		"title": "The Evil Within 2",
+		"description": "The Evil Within 2 is a survival horror game developed by Tango Gameworks and published by Bethesda Softworks in October 2017.",
+		"platform": "playstation pc x-box",
+		"category": "survival-horror",
+		"rating": 10,
+		"price": 50,
+		"img": "/images/games/evil2.webp",
+		"video": "https://www.youtube.com/embed/f7JbFBq4NAo",
+		"active": false
+	},
+
+	{
+		"_id": 21,
+		"title": "Fight Night Champion",
+		"description": "Fight Night Champion is a realistic boxing video game released in 2011 by Electronic Arts.",
+		"platform": "playstation x-box",
+		"category": "fighting",
+		"rating": 10,
+		"price": 24,
+		"img": "/images/games/fight.webp",
+		"video": "https://www.youtube.com/embed/nepBG1PtFd0",
+		"active": false
+	},
+
+	{
+		"_id": 22,
+		"title": "God of War III",
+		"description": "God of War III is a single-player action-adventure game set in the realm of brutal Greek mythology.",
+		"platform": "playstation",
+		"category": "action-adventure hack-and-slash",
+		"rating": 10,
+		"price": 47,
+		"img": "/images/games/gow3.webp",
+		"video": "https://www.youtube.com/embed/e5I3OdpjlLU",
+		"active": false
+	},
+
+	{
+		"_id": 23,
+		"title": "Hitman: Absolution",
+		"description": "Hitman: Absolution is a stealth-action video game released on November 20, 2012, by IO Interactive.",
+		"platform": "playstation pc x-box",
+		"category": "TPS",
+		"rating": 10,
+		"price": 22,
+		"img": "/images/games/hitman.webp",
+		"video": "https://www.youtube.com/embed/YniyqvkFM5k",
+		"active": false
+	},
+
+	{
+		"_id": 24,
+		"title": "For Honor",
+		"description": "For Honor is an online third-person hack-and-slash action and tactical fighting game developed and published by Ubisoft.",
+		"platform": "playstation pc x-box",
+		"category": "hack-and-slash",
+		"rating": 10,
+		"price": 48,
+		"img": "/images/games/honor.webp",
+		"video": "https://www.youtube.com/embed/zFUymXnQ5z8",
+		"active": false
+	},
+
+	{
+		"_id": 25,
+		"title": "Kingdom Come: Deliverance 2",
+		"description": "Kingdom Come: Deliverance is a realistic, story-driven open-world action RPG set in 15th-century medieval Bohemia.",
+		"platform": "playstation pc x-box",
+		"category": "open-world",
+		"rating": 8.5,
+		"price": 56,
+		"img": "/images/games/kingdom.webp",
+		"video": "https://www.youtube.com/embed/BQu-uuQYrXY",
+		"active": false
+	},
+
+	{
+		"_id": 26,
+		"title": "Little Nightmares",
+		"description": "Little Nightmares is a dark, whimsical puzzle-platformer and psychological horror game developed by Tarsier Studios and published by BANDAI NAMCO Entertainment.",
+		"platform": "playstation pc x-box",
+		"category": "platformer",
+		"rating": 10,
+		"price": 38,
+		"img": "/images/games/little1.webp",
+		"video": "https://www.youtube.com/embed/aOadxZBsPiA",
+		"active": false
+	},
+
+	{
+		"_id": 27,
+		"title": "Little Nightmares II",
+		"description": "Little Nightmares II is a suspense-adventure puzzle-platformer horror game developed by Tarsier Studios and published by Bandai Namco Entertainment.",
+		"platform": "playstation pc x-box",
+		"category": "platformer",
+		"rating": 10,
+		"price": 42,
+		"img": "/images/games/little2.webp",
+		"video": "https://www.youtube.com/embed/AI9zBBTyX-E",
+		"active": false
+	},
+
+	{
+		"_id": 28,
+		"title": "Little Nightmares III",
+		"description": "Little Nightmares III is an atmospheric puzzle-adventure and horror video game developed by Supermassive Games and published by Bandai Namco Entertainment.",
+		"platform": "playstation pc x-box",
+		"category": "platformer",
+		"rating": 10,
+		"price": 60,
+		"img": "/images/games/little3.webp",
+		"video": "https://www.youtube.com/embed/XFHOsobwFrA",
+		"active": false
+	},
+
+	{
+		"_id": 29,
+		"title": "Mafia III",
+		"description": "Mafia III is an open-world, third-person action-adventure video game developed by Hangar 13 and published by 2K Games.",
+		"platform": "playstation pc x-box",
+		"category": "open-world",
+		"rating": 10,
+		"price": 45,
+		"img": "/images/games/mafia.webp",
+		"video": "https://www.youtube.com/embed/j6dgC5RMXRs",
+		"active": false
+	},
+
+	{
+		"_id": 30,
+		"title": "Medal of Honor: Warfighter",
+		"description": "Medal of Honor: Warfighter is a first-person shooter video game released in 2012 by Electronic Arts and developed by Danger Close Games.",
+		"platform": "playstation pc x-box",
+		"category": "FPC",
+		"rating": 10,
+		"price": 21,
+		"img": "/images/games/medal.webp",
+		"video": "https://www.youtube.com/embed/z__eIiKDXpU",
+		"active": false
+	},
+
+	{
+		"_id": 31,
+		"title": "Mortal Kombat 1",
+		"description": "Mortal Kombat 1 is a 2023 fighting video game developed by NetherRealm Studios and published by Warner Bros. Games.",
+		"platform": "playstation pc x-box",
+		"category": "fighting",
+		"rating": 8.2,
+		"price": 58,
+		"img": "/images/games/mortal.webp",
+		"video": "https://www.youtube.com/embed/UZ6eFEjFfJ0",
+		"active": false
+	},
+
+	{
+		"_id": 32,
+		"title": "MotorStorm: Apocalypse",
+		"description": "MotorStorm: Apocalypse is a 2011 off-road arcade racing video game developed by Evolution Studios and published by Sony Computer Entertainment for the PlayStation 3.",
+		"platform": "playstation",
+		"category": "racing",
+		"rating": 8.1,
+		"price": 18,
+		"img": "/images/games/motor.webp",
+		"video": "https://www.youtube.com/embed/G8LUM0Vi4zI",
+		"active": false
+	},
+
+	{
+		"_id": 33,
+		"title": "The Order: 1886",
+		"description": "The Order: 1886 is a 2015 action-adventure video game set in an alternate history of Neo-Victorian London.",
+		"platform": "playstation",
+		"category": "action-adventure TPS",
+		"rating": 10,
+		"price": 60,
+		"img": "/images/games/order.webp",
+		"video": "https://www.youtube.com/embed/2FK8dgzW0o8",
+		"active": false
+	},
+
+	{
+		"_id": 34,
+		"title": "A Way Out",
+		"description": "A Way Out is a 2018 cooperative action-adventure video game developed by Hazelight Studios and published by Electronic Arts.",
+		"platform": "playstation pc x-box",
+		"category": "action-adventure",
+		"rating": 10,
+		"price": 58,
+		"img": "/images/games/out.webp",
+		"video": "https://www.youtube.com/embed/yGZGSdgJVPM",
+		"active": false
+	},
+
+	{
+		"_id": 35,
+		"title": "Resident Evil 2: Remake",
+		"description": "Resident Evil 2 (2019) is a survival horror video game developed and published by Capcom as a complete ground-up reimagining of the classic 1998 original.",
+		"platform": "playstation pc x-box",
+		"category": "TPS survival-horror",
+		"rating": 10,
+		"price": 55,
+		"img": "/images/games/re2.webp",
+		"video": "https://www.youtube.com/embed/u3wS-Q2KBpk",
+		"active": false
+	},
+
+	{
+		"_id": 36,
+		"title": "Resident Evil Requiem",
+		"description": "Resident Evil Requiem (informally known as Resident Evil 9) is a survival horror video game developed and published by CAPCOM Co., Ltd. released on February 26, 2026.",
+		"platform": "playstation pc x-box",
+		"category": "TPS survival-horror",
+		"rating": 10,
+		"price": 67,
+		"img": "/images/games/re9.webp",
+		"video": "https://www.youtube.com/embed/YoFXs6Ifna8",
+		"active": false
+	},
+
+	{
+		"_id": 37,
+		"title": "Ryse: Son of Rome",
+		"description": "Ryse: Son of Rome is a 2013 action-adventure video game developed by Crytek that follows the personal journey of Roman soldier Marius Titus as he seeks vengeance for his murdered family.",
+		"platform": "x-box",
+		"category": "action-adventure",
+		"rating": 10,
+		"price": 37,
+		"img": "/images/games/rome.webp",
+		"video": "https://www.youtube.com/embed/dT21_3fjBg4",
+		"active": false
+	},
+
+	{
+		"_id": 38,
+		"title": "Hellblade: Senua's Sacrifice",
+		"description": "Hellblade: Senua's Sacrifice is a dark fantasy action-adventure game that follows Senua, a traumatized Celtic warrior journeying through a Viking underworld to save her dead lover's soul.",
+		"platform": "playstation pc x-box",
+		"category": "action-adventure",
+		"rating": 9.2,
+		"price": 40,
+		"img": "/images/games/senua.webp",
+		"video": "https://www.youtube.com/embed/JRncx5UhCok",
+		"active": false
+	},
+
+	{
+		"_id": 39,
+		"title": "Street Fighter 6",
+		"description": "Street Fighter 6 is a 2023 fighting game developed and published by Capcom that represents the next evolution of the iconic Street Fighter series.",
+		"platform": "playstation pc x-box",
+		"category": "fighting",
+		"rating": 7.3,
+		"price": 46,
+		"img": "/images/games/sf6.webp",
+		"video": "https://www.youtube.com/embed/rN_PBAK5YyM",
+		"active": false
+	},
+
+	{
+		"_id": 40,
+		"title": "Tom Clancy's Splinter Cell: Blacklist",
+		"description": "Tom Clancy's Splinter Cell: Blacklist is an action-adventure stealth game developed by Ubisoft Toronto and published by Ubisoft in 2013.",
+		"platform": "playstation pc x-box",
+		"category": "action-adventure TPS",
+		"rating": 10,
+		"price": 22,
+		"img": "/images/games/splinter.webp",
+		"video": "https://www.youtube.com/embed/wYGoFH6bWXg",
+		"active": false
+	},
+
+	{
+		"_id": 41,
+		"title": "Unravel Two",
+		"description": "Unravel Two is a 2018 puzzle-platformer video game developed by Coldwood Interactive and published by Electronic Arts.",
+		"platform": "playstation pc x-box",
+		"category": "platformer",
+		"rating": 10,
+		"price": 33,
+		"img": "/images/games/unravel.webp",
+		"video": "https://www.youtube.com/embed/j2TmLrTl6gs",
+		"active": false
+	},
+
+	{
+		"_id": 42,
+		"title": "Until Dawn",
+		"description": "Until Dawn is a survival horror interactive drama video game developed by Supermassive Games.",
+		"platform": "playstation",
+		"category": "interactive",
+		"rating": 10,
+		"price": 39,
+		"img": "/images/games/until.webp",
+		"video": "https://www.youtube.com/embed/rkJ67WnliVc",
+		"active": false
+	},
+
+	{
+		"_id": 43,
+		"title": "Assassin's Creed Valhalla",
+		"description": "Assassin's Creed Valhalla is an action role-playing video game released in 2020. You play as Eivor, a Viking raider who leads a clan from Norway to the rich lands of 9th-century England.",
+		"platform": "playstation pc x-box",
+		"category": "open-world",
+		"rating": 7.1,
+		"price": 37,
+		"img": "/images/games/valhalla.webp",
+		"video": "https://www.youtube.com/embed/rKjUAWlbTJk",
+		"active": false
+	},
+
+	{
+		"_id": 44,
+		"title": "The Witcher 3: Wild Hunt",
+		"description": "The Witcher 3: Wild Hunt is an open-world action role-playing game developed by CD Projekt Red.",
+		"platform": "playstation pc x-box",
+		"category": "open-world",
+		"rating": 6.8,
+		"price": 35,
+		"img": "/images/games/witcher.webp",
+		"video": "https://www.youtube.com/embed/1-l29HlKkXU",
+		"active": false
+	},
+
+	{
+		"_id": 45,
+		"title": "Wolfenstein: The New Order",
+		"description": "Wolfenstein: The New Order is an action-adventure first-person shooter developed by MachineGames and published by Bethesda Softworks.",
+		"platform": "playstation pc x-box",
+		"category": "FPC",
+		"rating": 10,
+		"price": 43,
+		"img": "/images/games/wolf1.webp",
+		"video": "https://www.youtube.com/embed/dwjKMjIE1rs",
+		"active": false
+	},
+
+	{
+		"_id": 46,
+		"title": "Wolfenstein II: The New Colossus",
+		"description": "Wolfenstein II: The New Colossus is a 2017 first-person shooter game developed by MachineGames and published by Bethesda Softworks.",
+		"platform": "playstation pc x-box",
+		"category": "FPC",
+		"rating": 10,
+		"price": 67,
+		"img": "/images/games/wolf2.webp",
+		"video": "https://www.youtube.com/embed/OHn6jbK7RE4",
+		"active": false
+	},
+
+	{
+		"_id": 47,
+		"title": "Marvel's Wolverine",
+		"description": "Marvel's Wolverine for the PlayStation 5 is a linear action-adventure game developed by Insomniac Games that delivers a mature, ferocious, and cinematic take on the iconic X-Men hero Logan.",
+		"platform": "playstation",
+		"category": "action-adventure hack-and-slash",
+		"rating": 10,
+		"price": 70,
+		"img": "/images/games/wolverine.webp",
+		"video": "https://www.youtube.com/embed/OiBo_NgYI5Q",
+		"active": false
+	},
+
+	{
+		"_id": 48,
+		"title": "Wreckfest",
+		"description": "Wreckfest is a demolition derby-themed racing video game developed by Bugbear Entertainment and published by THQ Nordic.",
+		"platform": "playstation pc x-box",
+		"category": "racing",
+		"rating": 9.3,
+		"price": 43,
+		"img": "/images/games/wreck.webp",
+		"video": "https://www.youtube.com/embed/qJdk-hMsruA",
+		"active": false
+	},
+
+	{
+		"_id": 49,
+		"title": "Killzone Shadow Fall",
+		"description": "Killzone Shadow Fall is a 2013 futuristic first-person shooter video game developed by Guerrilla Games and published by Sony Computer Entertainment for the PlayStation 4",
+		"platform": "playstation",
+		"category": "FPC",
+		"rating": 9.2,
+		"price": 34,
+		"img": "/images/games/zone.webp",
+		"video": "https://www.youtube.com/embed/JUZJTjns6Qg",
+		"active": false
+	},
+
+	{
+		"_id": 50,
+		"title": "Batman: Arkham Knight",
+		"description": "Batman: Arkham Knight is an action-adventure video game that concludes the acclaimed Arkham trilogy by Rocksteady Studios.",
+		"platform": "playstation pc x-box",
+		"category": "action-adventure",
+		"rating": 10,
+		"price": 48,
+		"img": "/images/games/bat.webp",
+		"video": "https://www.youtube.com/embed/wsf78BS9VE0",
 		"active": false
 	}
 ]

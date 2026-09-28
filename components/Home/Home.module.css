@@ -10,6 +10,35 @@
 	transform-origin: bottom;
 	z-index: 1000;
 
+	.sectionTitle {
+		text-transform: uppercase;
+		color: var(--bgColor);
+		font-family: var(--font-inter), sans-serif;
+		font-weight: 900;
+		font-size: 40px;
+		letter-spacing: 1px;
+		text-shadow:
+			-1px -1px 2px #44514a,
+			1px 1px 0px #222825,
+			2px 2px 0px #1e2321,
+			3px 3px 0px #1a1e1c,
+			4px 4px 6px #151917,
+			-4px -4px 8px #3b4540;
+
+	}
+
+	.viewMore {
+		text-decoration: none;
+		color: #dfb15b;
+		font-size: 16px;
+		transition: 0.3s;
+
+		&:hover {
+			transform: scale(0.96);
+			color: #d97736;
+		}
+	}
+
 	&::-webkit-scrollbar {
 		display: none;
 	}
