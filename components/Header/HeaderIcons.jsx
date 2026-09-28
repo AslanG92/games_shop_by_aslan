@@ -1,6 +1,6 @@
 "use client";
-import Image from "next/image";
 import cls from "./Header.module.css";
+import userImg from "../../public/images/user.webp";
 
 export default function UserItems({ activeIcon, handleIconClick, userImage }) {
 	return (
@@ -25,14 +25,7 @@ export default function UserItems({ activeIcon, handleIconClick, userImage }) {
 
 			<div className={`${cls.avatar} ${activeIcon === "avatar" ? cls.clicked : undefined}`}>
 				<a href="#" onClick={(e) => handleIconClick(e, "avatar")}>
-					<Image
-						src={userImage}
-						alt="User avatar"
-						loading="eager"
-						width={35}
-						height={35}
-						style={{ borderRadius: "50%", objectFit: "cover" }}
-					/>
+					<img src={userImg.src} alt="User avatar" />
 				</a>
 				<div className={cls.user}>
 					<span>User Name</span>

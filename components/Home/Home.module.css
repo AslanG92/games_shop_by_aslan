@@ -1,0 +1,23 @@
+.home {
+	overflow: hidden;
+	position: absolute;
+	width: 100%;
+	top: 100vh;
+	padding: 0 30px;
+	bottom: 0;
+	opacity: 0;
+	transition: 1s ease-in-out;
+	transform-origin: bottom;
+	z-index: 1000;
+
+	&::-webkit-scrollbar {
+		display: none;
+	}
+
+	&.active {
+		top: 100px;
+		height: auto;
+		overflow-y: visible;
+		opacity: 1;
+	}
+}

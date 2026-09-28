@@ -1,0 +1,146 @@
+:global(.swiper) {
+	width: 90%;
+	padding-bottom: 30px;
+
+	--swiper-navigation-color: #ffffff !important;
+}
+
+:global(.swiper-slide) {
+	width: 550px;
+	height: 350px;
+}
+
+:global(.swiper-button-prev),
+:global(.swiper-button-next) {
+	position: absolute;
+	width: 50px;
+	height: 50px;
+	background: rgba(255, 255, 255, 0.2);
+	border-radius: 20%;
+	backdrop-filter: blur(20px);
+	bottom: 0 !important;
+}
+
+:global(.swiper-slide.swiper-slide-active) .playBtn:global(.active) .play {
+	display: none !important;
+}
+
+:global(.swiper-slide.swiper-slide-active) .playBtn:global(.active) .pause {
+	display: block !important;
+}
+
+:global(.swiper-slide.swiper-slide-active) .video:global(.active) iframe {
+	visibility: visible;
+	opacity: 1;
+	transform: scale(1);
+}
+
+.gameSlider {
+	position: relative;
+	width: 100%;
+	height: 100%;
+	background-position: center;
+	background-size: cover;
+	padding: 30px;
+	overflow: hidden;
+
+	img {
+		position: absolute;
+		top: 0;
+		left: 0;
+		width: 100%;
+		height: 100%;
+		object-fit: fill;
+		object-position: center;
+		border-radius: 30px !important;
+	}
+
+	iframe {
+		position: absolute;
+		right: 0;
+		top: 0;
+		width: 85%;
+		height: 75%;
+		border-radius: 0 30px 0 30px !important;
+		border: 5px solid transparent;
+		background: rgba(217, 119, 54);
+		box-shadow: var(--sectionBoxShadow);
+		z-index: 1100;
+		visibility: hidden;
+		opacity: 0;
+		transform: scale(0);
+		transition: 0.5s;
+		transform-origin: top right;
+	}
+
+	.content {
+		position: absolute;
+		bottom: 20px;
+		z-index: 1000;
+		width: 60%;
+
+		h2 {
+			font-family: var(--font-playpen), cursive;
+			font-size: 24px;
+			font-weight: 600;
+			text-decoration: underline;
+		}
+
+		p {
+			font-family: var(--font-playpen), cursive;
+			font-size: 13px;
+			font-weight: 200;
+			line-height: 1.3;
+		}
+
+		.buttons {
+			display: inline-flex;
+			align-items: center;
+			gap: 20px;
+
+			a {
+				text-decoration: none;
+				color: #ffffff;
+				text-transform: uppercase;
+			}
+
+			.orderBtn {
+				padding: 8px 20px;
+				background: #d97736;
+				border-radius: 10px;
+			}
+
+			.playBtn {
+				width: 50px;
+				height: 50px;
+				background: rgba(255, 255, 255, 0.2);
+				border-radius: 50%;
+				display: flex;
+				justify-content: center;
+				align-items: center;
+				font-size: 30px;
+
+				.pause {
+					display: none;
+					color: #d97736;
+				}
+
+				.play {
+					display: block;
+					color: #d97736;
+				}
+			}
+		}
+	}
+
+	&::after {
+		position: absolute;
+		content: "";
+		top: 0;
+		left: 0;
+		right: 0;
+		bottom: 0;
+		background: rgba(0, 0, 0, 0.3);
+		border-radius: 30px !important;
+	}
+}

@@ -1,0 +1,113 @@
+[
+	{
+		"_id": 1,
+		"title": "God of war",
+		"description": "God of War (2018) is an action-adventure game developed by Santa Monica Studio that shifts the franchise [from Greek mythology to the Norse realm] of Midgard.",
+		"platform": "playstation pc",
+		"category": "action-adventure",
+		"rating": 10,
+		"discount": 0.2,
+		"price": 50,
+		"img": "/images/games/gow1.webp",
+		"video": "https://www.youtube.com/embed/K0u_kAWLJOA",
+		"active": true
+	},
+
+	{
+		"_id": 2,
+		"title": "God of war: Ragnarok",
+		"description": "God of war: Ragnarok Set as the direct sequel to the 2018 God of War, the game follows the duo as they journey through the Nine Realms to find answers before the prophesied end-of-days battle.",
+		"platform": "playstation pc",
+		"category": "action-adventure",
+		"rating": 10,
+		"discount": 0,
+		"price": 60,
+		"img": "/images/games/gow2.webp",
+		"video": "https://www.youtube.com/embed/EE-4GvjKcfs",
+		"active": false
+	},
+
+	{
+		"_id": 3,
+		"title": "The Last of Us: part 1",
+		"description": "The Last of Us Part I is a third-person action-adventure and survival game where you guide a hardened smuggler and an immune teenager through a ruined America.",
+		"platform": "playstation pc",
+		"category": "action-adventure",
+		"rating": 10,
+		"discount": 0.4,
+		"price": 40,
+		"img": "/images/games/lou1.webp",
+		"video": "https://www.youtube.com/embed/WxjeV10H1F0",
+		"active": false
+	},
+
+	{
+		"_id": 4,
+		"title": "The Last of Us: part 2",
+		"description": "The Last of Us Part II is an action-adventure game set in a post-apocalyptic United States five years after the events of the original game.",
+		"platform": "playstation pc",
+		"category": "action-adventure",
+		"rating": 10,
+		"discount": 0.2,
+		"price": 60,
+		"img": "/images/games/lou2.webp",
+		"video": "https://www.youtube.com/embed/W2Wnvvj33Wo",
+		"active": false
+	},
+
+	{
+		"_id": 5,
+		"title": "Uncharted 4: A Thief's End",
+		"description": "Uncharted 4: A Thief's End is a 2016 action-adventure game developed by Naughty Dog and published by Sony Interactive Entertainment.",
+		"platform": "playstation pc",
+		"category": "action-adventure",
+		"rating": 10,
+		"discount": 0.5,
+		"price": 50,
+		"img": "/images/games/uncharted.webp",
+		"video": "https://www.youtube.com/embed/hh5HV4iic1Y",
+		"active": false
+	},
+
+	{
+		"_id": 6,
+		"title": "Beyond: Two Souls",
+		"description": "Beyond: Two Souls is a psychological action-thriller and interactive drama game that follows the remarkable life of Jodie Holmes.",
+		"platform": "playstation",
+		"category": "interactive",
+		"rating": 10,
+		"discount": 0.7,
+		"price": 40,
+		"img": "/images/games/beyond.webp",
+		"video": "https://www.youtube.com/embed/MtEoS0MaNyA",
+		"active": false
+	},
+
+	{
+		"_id": 7,
+		"title": "Detroit: Become Human",
+		"description": "Detroit: Become Human is a cinematic interactive drama and action-adventure game developed by Quantic Dream.",
+		"platform": "playstation",
+		"category": "interactive",
+		"rating": 10,
+		"discount": 0.7,
+		"price": 45,
+		"img": "/images/games/detroid.webp",
+		"video": "https://www.youtube.com/embed/QD1pbWCJcKQ",
+		"active": false
+	},
+
+	{
+		"_id": 8,
+		"title": "Max Payne 3",
+		"description": "Max Payne 3 is a dark, cinematic third-person shooter developed by Rockstar Games.",
+		"platform": "playstation pc x-box",
+		"category": "TPS",
+		"rating": 10,
+		"discount": 0.8,
+		"price": 30,
+		"img": "/images/games/max.webp",
+		"video": "https://www.youtube.com/embed/4Uc_dbG7MR8",
+		"active": false
+	}
+]

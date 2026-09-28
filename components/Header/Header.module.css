@@ -86,7 +86,7 @@
 		.avatar {
 			width: 150px;
 			height: 50px;
-			padding: 10px 20px;
+			padding: 10px 10px;
 			display: flex;
 			align-items: center;
 			gap: 15px;
@@ -119,6 +119,13 @@
 
 			a {
 				font-size: 30px;
+
+				img {
+					width: 35px;
+					height: 35px;
+					border-radius: 50%;
+				}
+
 			}
 
 			.user {
