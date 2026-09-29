@@ -1,0 +1,142 @@
+.gameCard {
+	position: relative;
+	padding: 25px 20px;
+	margin-bottom: 25px;
+	width: auto;
+	height: 400px;
+	border-radius: 12px;
+	background: var(--bgColor);
+	box-shadow: var(--linksBoxShadow);
+
+	img {
+		border-radius: 12px;
+		margin-bottom: 15px;
+		object-fit: cover;
+		object-position: center;
+		height: 50%;
+		width: 100%;
+	}
+
+	.gameFeature {
+		display: flex;
+		justify-content: space-between;
+		align-items: center;
+		flex-wrap: wrap;
+
+		.platformsList {
+			display: flex;
+			gap: 8px;
+
+			.gamePlatform {
+				font-size: 22px;
+				color: #6b7c74;
+				text-shadow:
+					-1px -1px 1px rgba(255, 255, 255, 0.7),
+					1px 1px 1px rgba(0, 0, 0, 0.3),
+					1px 1px 1px rgba(0, 0, 0, 0.7);
+				transition: color 0.2s ease;
+			}
+		}
+	}
+
+	.gameTitle {
+		margin-top: 10px;
+		font-family: var(--font-playpen), cursive;
+		text-transform: uppercase;
+		font-size: 16px;
+		font-weight: 900;
+		color: #6b7c74;
+		text-shadow:
+			-1px -1px 1px rgba(255, 255, 255, 0.7),
+			1px 1px 1px rgba(0, 0, 0, 0.3),
+			1px 1px 1px rgba(0, 0, 0, 0.7);
+	}
+
+	.gamePrice {
+		display: flex;
+		justify-content: space-between;
+		align-items: center;
+		flex-wrap: wrap;
+		color: #6b7c74;
+
+		.currentPrice,
+		.price {
+			font-size: 20px;
+			font-weight: 900;
+			text-shadow:
+				-1px -1px 1px rgba(255, 255, 255, 0.7),
+				1px 1px 1px rgba(0, 0, 0, 0.3),
+				1px 1px 1px rgba(0, 0, 0, 0.7);
+		}
+
+		.discount {
+			padding: 2px 6px;
+			border-radius: 10px;
+			font-size: 16px;
+			outline-width: 800;
+			color: #6b7c74;
+			box-shadow: var(--linksBoxShadow);
+		}
+
+		.prevPrice {
+			text-decoration: line-through;
+			text-decoration-color: #d97736;
+			text-decoration-thickness: 1px;
+			font-size: 14px;
+		}
+	}
+
+	.like {
+		position: absolute;
+		left: 0;
+		bottom: 0;
+		color: #d97736;
+		padding: 10px;
+		width: 40px;
+		height: 40px;
+		display: flex;
+		justify-content: center;
+		align-items: center;
+		border-radius: 0 20px;
+		font-size: 20px;
+		box-shadow: var(--linksBoxShadow);
+		transition: 0.3s;
+
+		&:hover {
+			box-shadow: 0 0 1px #6b7c74;
+			color: #6b7c74;
+		}
+
+		&:active {
+			box-shadow: var(--linksInsetBoxShadow);
+			transform: scale(0.95);
+		}
+	}
+
+	.addBag {
+		position: absolute;
+		right: 0;
+		bottom: 0;
+		color: #d97736;
+		padding: 10px;
+		width: 40px;
+		height: 40px;
+		display: flex;
+		justify-content: center;
+		align-items: center;
+		border-radius: 20px 0;
+		font-size: 20px;
+		box-shadow: var(--linksBoxShadow);
+		transition: 0.3s;
+
+		&:hover {
+			box-shadow: 0 0 1px #6b7c74;
+			color: #6b7c74;
+		}
+
+		&:active {
+			box-shadow: var(--linksInsetBoxShadow);
+			transform: scale(0.95);
+		}
+	}
+}

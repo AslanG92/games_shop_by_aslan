@@ -1,16 +1,21 @@
+import GameCard from "./GameCard";
 import GameSwiper from "./GameSwiper";
 import cls from "./Home.module.css";
 
 export default function Home({ games }) {
+	const promoGames = games.filter((game) => game.discount);
+
 	return (
 		<section id="home" className={`${cls.home} ${cls.active}`}>
 			<div className="container-fluid">
 				<div className="row">
 					<GameSwiper games={games} />
 				</div>
-				<div className="row">
+				<div className="row mb-4 mt-4">
 					<div className="col-lg-6">
-						<h2 className={cls.sectionTitle}>Games on Promotion:</h2>
+						<h2 className={cls.sectionTitle}>
+							Hot Sale <i className="bi bi-fire"></i>
+						</h2>
 					</div>
 
 					<div className="col-lg-6 d-flex justify-content-end align-items-center">
@@ -18,6 +23,12 @@ export default function Home({ games }) {
 							View More Games <i className="bi bi-arrow-bar-right"></i>
 						</a>
 					</div>
+				</div>
+
+				<div className="row">
+					{promoGames.map((game) => (
+						<GameCard key={game._id} game={game} />
+					))}
 				</div>
 			</div>
 		</section>
