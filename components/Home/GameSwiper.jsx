@@ -4,16 +4,9 @@ import "swiper/css/effect-coverflow";
 import "swiper/css/navigation";
 import cls from "./GameSwiper.module.css";
 import { EffectCoverflow, Navigation, Autoplay } from "swiper/modules";
-import { useState } from "react";
 import GameSlide from "./GameSlide";
 
 export default function GameSwiper({ games }) {
-	const [active, setActive] = useState(false);
-
-	const handleToggleVideo = () => {
-		setActive(!active);
-	};
-
 	return (
 		<Swiper
 			effect={"coverflow"}
@@ -28,7 +21,7 @@ export default function GameSwiper({ games }) {
 		>
 			{games.map((game) => (
 				<SwiperSlide key={game._id}>
-					<GameSlide game={game} active={active} toggleVideo={handleToggleVideo} />
+					<GameSlide game={game} />
 				</SwiperSlide>
 			))}
 		</Swiper>

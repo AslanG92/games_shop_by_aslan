@@ -45,9 +45,31 @@
 			align-items: center;
 			text-decoration: none;
 
+			.like,
+			.bag {
+				position: absolute;
+				right: 0;
+				bottom: 10px;
+				font-size: 13px;
+				font-weight: 600;
+				width: 20px;
+				height: 20px;
+				color: #e6dfd3;
+				background: #d97736;
+				border-radius: 50%;
+				display: flex;
+				justify-content: center;
+				align-items: center;
+			}
+
 			&:hover {
 				box-shadow: 0 0 1px #6b7c74;
 				color: #6b7c74;
+
+				.like,
+				.bag {
+					background: #dfb15b;
+				}
 			}
 
 			&:active {
@@ -60,26 +82,14 @@
 				transform: scale(0.95);
 				color: #6b7c74 !important;
 
+				.like,
+				.bag {
+					background: #dfb15b;
+				}
+
 				i {
 					color: #6b7c74;
 				}
-			}
-
-			.like,
-			.bag {
-				position: absolute;
-				right: 0;
-				bottom: 10px;
-				font-size: 13px;
-				font-weight: 600;
-				width: 20px;
-				height: 20px;
-				color: #fff;
-				background: #d97736;
-				border-radius: 50%;
-				display: flex;
-				justify-content: center;
-				align-items: center;
 			}
 		}
 
