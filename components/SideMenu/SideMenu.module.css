@@ -61,11 +61,6 @@
 				transform: scale(0.97);
 			}
 
-			&:active {
-				box-shadow: var(--linksInsetBoxShadow);
-				transform: scale(0.95);
-			}
-
 			&.clicked {
 				box-shadow: var(--linksInsetBoxShadow);
 				transform: scale(0.95);

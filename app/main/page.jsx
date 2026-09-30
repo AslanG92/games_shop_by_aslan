@@ -1,8 +1,8 @@
 "use client";
 import { useState } from "react";
 import SideMenu from "@/components/SideMenu/SideMenu";
-import cls from "./page.module.css";
-import Header from "@/app/header/page";
+import cls from "@/app/main/page.module.css";
+import Header from "@/components/Header/Header";
 
 export default function Main({ children }) {
 	const [active, setActive] = useState(false);

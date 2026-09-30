@@ -8,7 +8,7 @@ export default function GameCard({ game }) {
 		xbox: "bi bi-xbox",
 	};
 
-	const platformsArray = game.platform ? game.platform.split(" ") : [];
+	const platformsArray = game.platform ? Array.from(new Set(game.platform.split(" "))) : [];
 
 	return (
 		<div className="col-xl-3 col-lg-4 col-md-6">
@@ -20,6 +20,9 @@ export default function GameCard({ game }) {
 						{platformsArray.map((plat) => {
 							const cleanPlat = plat.toLowerCase();
 							const iconClass = platformIcons[cleanPlat];
+
+							if (!iconClass) return null;
+
 							return (
 								<span key={cleanPlat} className={cls.gamePlatform} title={plat}>
 									<i className={iconClass}></i>
@@ -39,7 +42,7 @@ export default function GameCard({ game }) {
 							<span className={cls.currentPrice}>${((1 - game.discount) * game.price).toFixed(2)}</span>
 
 							<span className={cls.discount}>
-								<i>{game.discount * 100}%</i>
+								<i>{Math.round(game.discount * 100)}%</i>
 							</span>
 						</>
 					)}

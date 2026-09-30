@@ -1,4 +1,5 @@
-import cls from "./page.module.css";
+"use client";
+import cls from "./Header.module.css";
 import HeaderIcons from "@/components/Header/HeaderIcons";
 
 export default function Header({ toggleActive }) {

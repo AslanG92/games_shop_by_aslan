@@ -1,3 +1,4 @@
+"use client";
 import { useState } from "react";
 import cls from "./GameSwiper.module.css";
 
@@ -11,17 +12,17 @@ export default function GameSlide({ game }) {
 
 	return (
 		<div className={cls.gameSlider}>
-			<img src={game.img} alt="Game Poster" />
+			<img src={game.img} alt={`${game.title} Poster`} />
 
 			{isPlaying && (
-				<div className={`${cls.video} active`}>
+				<div className={`${cls.video} ${cls.active}`}>
 					<iframe
 						width="1280"
 						height="720"
 						title={game.title}
 						allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
 						allowFullScreen
-						src={`${game.video}?autoplay=1`}
+						src={`${game.video}?autoplay=1&enablejsapi=1`}
 					></iframe>
 				</div>
 			)}
@@ -38,16 +39,12 @@ export default function GameSlide({ game }) {
 
 					<a
 						href="#"
-						className={`${cls.playBtn} ${isPlaying ? "active" : undefined}`}
+						className={`${cls.playBtn} ${isPlaying ? cls.active : ""}`}
 						onClick={toggleVideo}
 						aria-label="play link"
 					>
-						<span className={cls.pause}>
-							<i className="bi bi-pause-fill"></i>
-						</span>
-
-						<span className={cls.play}>
-							<i className="bi bi-play-fill"></i>
+						<span className={isPlaying ? cls.pause : cls.play}>
+							<i className={isPlaying ? "bi bi-pause-fill" : "bi bi-play-fill"}></i>
 						</span>
 					</a>
 				</div>

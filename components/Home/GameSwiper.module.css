@@ -13,20 +13,6 @@
 	height: 350px;
 }
 
-:global(.swiper-slide.swiper-slide-active) .playBtn:global(.active) .play {
-	display: none !important;
-}
-
-:global(.swiper-slide.swiper-slide-active) .playBtn:global(.active) .pause {
-	display: block !important;
-}
-
-:global(.swiper-slide.swiper-slide-active) .video:global(.active) iframe {
-	visibility: visible;
-	opacity: 1;
-	transform: scale(1);
-}
-
 .gameSlider {
 	position: relative;
 	width: 100%;
@@ -48,22 +34,33 @@
 		filter: brightness(60%);
 	}
 
-	iframe {
+	.video {
 		position: absolute;
 		right: 0;
 		top: 0;
 		width: 85%;
 		height: 75%;
-		border-radius: 0 30px 0 30px !important;
-		border: 5px solid transparent;
-		background: #6b7c74;
-		box-shadow: var(--sectionBoxShadow);
 		z-index: 1100;
 		visibility: hidden;
 		opacity: 0;
 		transform: scale(0);
-		transition: 0.5s;
 		transform-origin: top right;
+		transition: 0.5s;
+
+		&.active {
+			visibility: visible;
+			opacity: 1;
+			transform: scale(1);
+		}
+	}
+
+	iframe {
+		width: 100%;
+		height: 100%;
+		border-radius: 0 30px 0 30px !important;
+		border: 5px solid transparent;
+		background: #6b7c74;
+		box-shadow: var(--sectionBoxShadow);
 	}
 
 	.content {
@@ -151,6 +148,16 @@
 					color: #dfb15b;
 					transform: scale(0.9);
 					box-shadow: 0 0 5px rgba(255, 255, 255, 0.3);
+				}
+
+				&.active {
+					.play {
+						display: none !important;
+					}
+
+					.pause {
+						display: block !important;
+					}
 				}
 
 				.pause {
