@@ -5,43 +5,45 @@ import cls from "./SideMenu.module.css";
 import { navListData } from "@/data/navListData";
 import { navListSocialItem } from "@/data/navListSocialItem";
 import NavListSocialItem from "./NavListSocialItem";
+import { usePathname } from "next/navigation";
+import Link from "next/link";
 
 export default function SideMenu({ active }) {
 	const [navData, setNavData] = useState(navListData);
 	const [navSocialData, setNavSocialData] = useState(navListSocialItem);
-	const [activeLinkId, setActiveLinkId] = useState(null);
+	const pathname = usePathname();
 
-	useEffect(() => {
-		const resetMenu = () => setActiveLinkId(null);
-		window.addEventListener("resetSidebarMenu", resetMenu);
-		return () => window.removeEventListener("resetSidebarMenu", resetMenu);
-	}, []);
+	const handleNavOnClick = (id) => {
+		const newNavData = navData.map((nav) => {
+			return {
+				...nav,
+				active: nav._id === id,
+			};
+		});
+		setNavData(newNavData);
+	};
 
 	return (
 		<div className={`${cls.sideMenu} ${active ? cls.active : undefined}`}>
-			<a
-				href="#"
-				className={cls.logo}
-				onClick={(e) => {
-					e.preventDefault();
-					setActiveLinkId(null);
-					window.dispatchEvent(new Event("resetHeaderIcons"));
-				}}
-				aria-label="logo"
-			>
+			<Link href="/" className={cls.logo}>
 				<i className="bi bi-controller"></i>
 				<span className={cls.brand}>{"Play"}</span>
-			</a>
+			</Link>
 
 			<ul className={cls.nav}>
-				{navData.map((item) => (
-					<NavListItem
-						key={item._id}
-						item={item}
-						isClicked={item._id === activeLinkId}
-						onClick={() => setActiveLinkId(item._id)}
-					/>
-				))}
+				{navData.map((item) => {
+					const itemPath = item.target === "home" ? "/" : `/${item.target}`;
+					const isCurrentActive = pathname === itemPath;
+					return (
+						<NavListItem
+							key={item._id}
+							item={item}
+							isClicked={isCurrentActive}
+							onClick={() => handleNavOnClick(item._id)}
+							navOnClick={handleNavOnClick}
+						/>
+					);
+				})}
 			</ul>
 
 			<ul className={cls.social}>

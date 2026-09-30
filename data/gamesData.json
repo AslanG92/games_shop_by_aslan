@@ -580,6 +580,7 @@
 		"platform": "playstation pc xbox",
 		"category": "open-world",
 		"rating": 6.8,
+		"discount": 0.65,
 		"price": 35,
 		"img": "/images/games/witcher.webp",
 		"video": "https://www.youtube.com/embed/1-l29HlKkXU",

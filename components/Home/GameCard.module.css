@@ -103,8 +103,9 @@
 		transition: 0.3s;
 
 		&:hover {
-			box-shadow: 0 0 1px #6b7c74;
-			color: #6b7c74;
+			box-shadow: 0 0 0 #2d3531;
+			color: #dfb15b;
+			transform: scale(0.96);
 		}
 
 		&:active {
@@ -130,8 +131,9 @@
 		transition: 0.3s;
 
 		&:hover {
-			box-shadow: 0 0 1px #6b7c74;
-			color: #6b7c74;
+			box-shadow: 0 0 0 #2d3531;
+			color: #dfb15b;
+			transform: scale(0.96);
 		}
 
 		&:active {

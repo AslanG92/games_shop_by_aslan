@@ -1,5 +1,11 @@
-import Main from "@/components/Main/Main";
+"use client";
+import Main from "@/app/main/page";
+import HomePage from "@/app/home/page";
 
 export default function Home() {
-	return <Main />;
+	return (
+		<Main>
+			<HomePage />
+		</Main>
+	);
 }

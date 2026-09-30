@@ -1,16 +1,19 @@
-import GameCard from "./GameCard";
-import GameSwiper from "./GameSwiper";
-import cls from "./Home.module.css";
+"use client";
+import GameCard from "@/components/Home/GameCard";
+import GameSwiper from "@/components/Home/GameSwiper";
+import cls from "./page.module.css";
+import gamesData from "@/data/gamesData.json";
 
-export default function Home({ games }) {
-	const promoGames = games.filter((game) => game.discount);
+export default function Home() {
+	const promoGames = gamesData.filter((game) => game.discount);
 
 	return (
 		<section id="home" className={`${cls.home} ${cls.active}`}>
 			<div className="container-fluid">
 				<div className="row">
-					<GameSwiper games={games} />
+					<GameSwiper games={gamesData} />
 				</div>
+
 				<div className="row mb-4 mt-4">
 					<div className="col-lg-6">
 						<h2 className={cls.sectionTitle}>

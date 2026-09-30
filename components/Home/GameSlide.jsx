@@ -12,6 +12,7 @@ export default function GameSlide({ game }) {
 	return (
 		<div className={cls.gameSlider}>
 			<img src={game.img} alt="Game Poster" />
+
 			{isPlaying && (
 				<div className={`${cls.video} active`}>
 					<iframe
@@ -24,13 +25,17 @@ export default function GameSlide({ game }) {
 					></iframe>
 				</div>
 			)}
+
 			<div className={cls.content}>
 				<h2>{game.title}</h2>
+
 				<p>{game.description}</p>
+
 				<div className={cls.buttons}>
 					<a href="#" className={cls.orderBtn} aria-label="order btn link">
 						Order Now
 					</a>
+
 					<a
 						href="#"
 						className={`${cls.playBtn} ${isPlaying ? "active" : undefined}`}

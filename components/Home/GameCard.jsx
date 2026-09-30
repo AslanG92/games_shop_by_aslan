@@ -46,6 +46,7 @@ export default function GameCard({ game }) {
 
 					<span className={game.discount ? cls.prevPrice : cls.price}>${game.price.toFixed(2)}</span>
 				</div>
+
 				<a href="#" className={cls.like} aria-label="like">
 					<i className="bi bi-heart-fill"></i>
 				</a>
