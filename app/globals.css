@@ -1,5 +1,8 @@
 :root {
 	--bgColor: #2d3531;
+	--actionColor: #d97736;
+	--clickedColor: #dfb15b;
+	--mainColor: #6b7c74;
 
 	--sectionBoxShadow: -5px -5px 15px #39433e, 5px 5px 15px #212724;
 	--linksBoxShadow: -3px -3px 6px #39433e, 3px 3px 6px #212724;
@@ -7,6 +10,16 @@
 	--mainBoxShadow: -5px -5px 15px #39433e, 5px 5px 15px #212724,
 		inset -5px -5px 15px #39433e, inset 5px 5px 15px #212724;
 
+	--neomorphicShadow: -1px -1px 1px rgba(255, 255, 255, 0.7),
+		1px 1px 1px rgba(0, 0, 0, 0.3),
+		1px 1px 1px rgba(0, 0, 0, 0.7);
+
+	--heading3DShadow: -1px -1px 2px #44514a,
+		1px 1px 0px #222825,
+		2px 2px 0px #1e2321,
+		3px 3px 0px #1a1e1c,
+		4px 4px 6px #151917,
+		-4px -4px 8px #3b4540;
 
 }
 
@@ -23,12 +36,4 @@ body {
 	width: 100%;
 	min-height: 100vh;
 	overflow: hidden;
-}
-
-h1,
-h2,
-h3,
-h4,
-p {
-	color: #fff;
 }

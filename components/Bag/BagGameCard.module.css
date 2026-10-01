@@ -1,0 +1,93 @@
+.bagCard {
+	background: var(--bgColor);
+	box-shadow: var(--linksBoxShadow);
+	border-radius: 12px;
+	padding: 15px 20px;
+	transition: 0.3s ease;
+	width: 100%;
+
+	.bagImg {
+		width: 100px;
+		height: 70px;
+		object-fit: cover;
+		border-radius: 6px;
+		background: var(--bgColor);
+		padding: 3px;
+		box-shadow: var(--linksInsetBoxShadow);
+		border: 1px solid rgba(255, 255, 255, 0.1);
+		transition: transform 0.3s ease, box-shadow 0.3s ease;
+	}
+
+	.bagTitle {
+		font-family: var(--font-playpen), cursive;
+		text-transform: uppercase;
+		font-size: 16px;
+		font-weight: 400;
+		color: #6b7c74;
+		text-shadow: var(--neomorphicShadow);
+	}
+
+	.bagPlatform {
+		font-size: 16px;
+		color: #6b7c74;
+		text-shadow: var(--neomorphicShadow);
+		transition: color 0.2s ease;
+	}
+
+	.currentPrice {
+		font-size: 18px;
+		font-weight: 900;
+		color: #6b7c74;
+		text-shadow: -1px -1px 1px rgba(255, 255, 255, 0.7), 1px 1px 1px rgba(0, 0, 0, 0.3);
+	}
+
+	.prevPrice {
+		font-size: 12px;
+		text-decoration: line-through;
+		color: #dfb15b;
+	}
+
+	.deleteBtn {
+		background: none;
+		border: none;
+		color: #d97736;
+		font-size: 20px;
+		cursor: pointer;
+		padding: 8px;
+		display: flex;
+		align-items: center;
+		justify-content: center;
+		border-radius: 8px;
+		box-shadow: var(--linksBoxShadow);
+		transition: 0.3s;
+
+		&:hover {
+			box-shadow: 0 0 0 #2d3531;
+			color: #dfb15b;
+			transform: scale(0.95);
+		}
+
+		&:active {
+			box-shadow: var(--linksInsetBoxShadow);
+		}
+	}
+
+	&:hover {
+		transform: scale(0.97);
+		box-shadow: 0 0 0 transparent;
+		border-color: #6b7c74;
+		box-shadow: var(--neomorphicShadow);
+
+		img {
+			padding: 0;
+			border: 1px solid #6b7c74;
+			box-shadow: var(--neomorphicShadow);
+			transition: all 0.3s ease;
+		}
+
+		.deleteBtn {
+			box-shadow: 0 0 0 #2d3531;
+		}
+	}
+
+}

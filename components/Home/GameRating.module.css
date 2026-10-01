@@ -3,13 +3,10 @@
 	gap: 2px;
 	font-size: 14px;
 	user-select: none;
-	text-shadow:
-		-1px -1px 1px rgba(255, 255, 255, 0.7),
-		1px 1px 1px rgba(0, 0, 0, 0.3),
-		1px 1px 1px rgba(0, 0, 0, 0.7);
+	text-shadow: var(--neomorphicShadow);
 }
 
 :global(.bi-star-fill),
 :global(.bi-star-half) {
-	color: #6b7c74;
+	color: var(--mainColor);
 }

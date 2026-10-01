@@ -7,10 +7,88 @@
 	z-index: 1000;
 
 	h1 {
-		color: #fff;
+		display: flex;
+		justify-content: center;
+		text-transform: uppercase;
+		color: var(--bgColor);
 		font-family: var(--font-inter), sans-serif;
-		margin-top: 20px;
+		font-weight: 900;
+		font-size: 50px;
+		letter-spacing: 1px;
+		text-shadow: var(--heading3DShadow);
 	}
+
+	.cartSummary {
+		font-family: var(--font-playpen), cursive;
+
+		h2 {
+			display: flex;
+			justify-content: center;
+			text-transform: uppercase;
+			font-size: 30px;
+			font-weight: 900;
+			color: var(--mainColor);
+			text-shadow: var(--neomorphicShadow);
+		}
+
+		.gamesCount,
+		.gamesTotal {
+			padding: 10px 20px;
+			width: auto;
+			border-radius: 12px;
+			background: var(--bgColor);
+			box-shadow: var(--linksInsetBoxShadow);
+
+			span {
+				text-transform: lowercase;
+				font-size: 20px;
+				font-weight: 400;
+				color: var(--mainColor);
+				text-shadow: var(--neomorphicShadow);
+			}
+		}
+
+		.checkoutBtn {
+			font-family: var(--font-playpen), cursive;
+			height: 50px;
+			border: none;
+			color: var(--actionColor);
+			background: var(--bgColor);
+			box-shadow: var(--linksBoxShadow);
+
+			&:hover {
+				box-shadow: 0 0 0 #2d3531;
+				color: var(--clickedColor);
+				transform: scale(0.97);
+			}
+
+			&:active {
+				color: var(--clickedColor);
+				box-shadow: var(--linksInsetBoxShadow);
+				transform: scale(0.95);
+			}
+		}
+	}
+
+	h4 {
+		font-family: var(--font-playpen), cursive;
+		text-transform: uppercase;
+		font-size: 30px;
+		font-weight: 900;
+		color: var(--mainColor);
+		text-shadow: var(--neomorphicShadow);
+	}
+
+	p {
+		font-family: var(--font-playpen), cursive;
+		text-transform: lowercase;
+		text-decoration: underline;
+		font-size: 20px;
+		font-weight: 400;
+		color: var(--mainColor);
+		text-shadow: var(--neomorphicShadow);
+	}
+
 
 	&::-webkit-scrollbar {
 		display: none;

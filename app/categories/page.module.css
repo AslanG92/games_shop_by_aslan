@@ -15,7 +15,7 @@
 		padding: 0;
 
 		li {
-			color: #d97736;
+			color: var(--actionColor);
 			padding: 10px 25px;
 			border-radius: 10px;
 			text-transform: uppercase;
@@ -25,20 +25,20 @@
 
 			&:hover {
 				box-shadow: 0 0 0 #2d3531;
-				color: #dfb15b;
+				color: var(--clickedColor);
 				transform: scale(0.97);
 			}
 
 			&.active {
 				box-shadow: var(--linksInsetBoxShadow);
-				color: #dfb15b;
+				color: var(--clickedColor);
 				transform: scale(0.95);
 			}
 		}
 	}
 
 	.search {
-		color: #d97736;
+		color: var(--actionColor);
 		display: inline-flex;
 		gap: 15px;
 		align-items: center;
@@ -56,33 +56,42 @@
 			outline: none;
 			border: none;
 			background: transparent;
-			color: #dfb15b;
+			color: var(--clickedColor);
 			font-size: 18px;
 
 			&::placeholder {
-				color: #d97736;
+				color: var(--actionColor);
 			}
 		}
 
 		&:hover {
 			input::placeholder {
-				color: #dfb15b;
+				color: var(--clickedColor);
 			}
 
 			box-shadow: 0 0 0 #2d3531;
-			color: #dfb15b;
+			color: var(--clickedColor);
 			transform: scale(0.97);
 		}
 
 		&:focus-within {
 			input::placeholder {
-				color: #dfb15b;
+				color: var(--clickedColor);
 			}
 
 			box-shadow: var(--linksInsetBoxShadow);
 			transform: scale(0.95);
-			color: #dfb15b;
+			color: var(--clickedColor);
 		}
+	}
+
+	h4 {
+		font-family: var(--font-playpen), cursive;
+		text-transform: uppercase;
+		font-size: 30px;
+		font-weight: 900;
+		color: var(--mainColor);
+		text-shadow: var(--neomorphicShadow);
 	}
 
 	&::-webkit-scrollbar {

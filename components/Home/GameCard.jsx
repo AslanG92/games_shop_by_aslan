@@ -1,7 +1,23 @@
+"use client";
+import { useState, useEffect } from "react";
+import { useGameStore } from "@/store/useGameStore";
 import cls from "./GameCard.module.css";
 import GameRating from "./GameRating";
 
 export default function GameCard({ game }) {
+	const toggleLike = useGameStore((state) => state.toggleLike);
+	const isGameLiked = useGameStore((state) => state.isGameLiked(game._id));
+
+	const addToBag = useGameStore((state) => state.addToBag);
+	const isGameInBag = useGameStore((state) => state.isGameInBag(game._id));
+
+	const [isMounted, setIsMounted] = useState(false);
+
+	useEffect(() => {
+		// eslint-disable-next-line react-hooks/set-state-in-effect
+		setIsMounted(true);
+	}, []);
+
 	const platformIcons = {
 		pc: "bi bi-steam",
 		playstation: "bi bi-playstation",
@@ -9,6 +25,19 @@ export default function GameCard({ game }) {
 	};
 
 	const platformsArray = game.platform ? Array.from(new Set(game.platform.split(" "))) : [];
+
+	const handleLikeClick = (e) => {
+		e.preventDefault();
+		toggleLike(game);
+	};
+
+	const handleBagClick = (e) => {
+		e.preventDefault();
+		addToBag(game);
+	};
+
+	const showLiked = isMounted && Boolean(isGameLiked);
+	const showInBag = isMounted && Boolean(isGameInBag);
 
 	return (
 		<div className="col-xl-3 col-lg-4 col-md-6">
@@ -50,12 +79,12 @@ export default function GameCard({ game }) {
 					<span className={game.discount ? cls.prevPrice : cls.price}>${game.price.toFixed(2)}</span>
 				</div>
 
-				<a href="#" className={cls.like} aria-label="like">
+				<a href="#" className={`${cls.like} ${showLiked ? cls.active : ""}`} onClick={handleLikeClick} aria-label="like">
 					<i className="bi bi-heart-fill"></i>
 				</a>
 
-				<a href="#" className={cls.addBag} aria-label="bag">
-					<i className="bi bi-bag-plus-fill"></i>
+				<a href="#" className={`${cls.addBag} ${showInBag ? cls.active : ""}`} onClick={handleBagClick} aria-label="bag">
+					<i className={showInBag ? "bi bi-bag-check-fill" : "bi bi-bag-plus-fill"}></i>
 				</a>
 			</div>
 		</div>

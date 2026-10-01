@@ -11,7 +11,7 @@ export default function SideMenu({ active }) {
 	const pathname = usePathname();
 
 	return (
-		<div className={`${cls.sideMenu} ${active ? cls.active : undefined}`}>
+		<div className={`${cls.sideMenu} ${Boolean(active) ? cls.active : ""}`}>
 			<Link href="/" className={cls.logo}>
 				<i className="bi bi-controller"></i>
 				<span className={cls.brand}>{"Play"}</span>

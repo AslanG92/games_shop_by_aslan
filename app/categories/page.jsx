@@ -84,7 +84,7 @@ export default function CategoriesPage() {
 
 						{data.length === 0 && (
 							<div className="text-center w-100 my-5">
-								<h4 className="text-muted">No games found...</h4>
+								<h4>No games found...</h4>
 							</div>
 						)}
 					</div>

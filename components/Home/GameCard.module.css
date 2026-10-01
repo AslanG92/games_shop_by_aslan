@@ -3,10 +3,13 @@
 	padding: 25px 20px;
 	margin-bottom: 25px;
 	width: auto;
-	height: 400px;
+	height: 420px;
 	border-radius: 12px;
+	font-family: var(--font-playpen), cursive;
 	background: var(--bgColor);
 	box-shadow: var(--linksBoxShadow);
+	border: 1px solid transparent;
+	transition: transform 0.3s ease, box-shadow 0.3s ease, border-color 0.3s ease;
 
 	img {
 		border-radius: 12px;
@@ -15,6 +18,11 @@
 		object-position: center;
 		height: 50%;
 		width: 100%;
+		background: var(--bgColor);
+		padding: 6px;
+		box-shadow: var(--linksInsetBoxShadow);
+		border: 1px solid rgba(255, 255, 255, 0.1);
+		transition: transform 0.3s ease, box-shadow 0.3s ease;
 	}
 
 	.gameFeature {
@@ -29,11 +37,8 @@
 
 			.gamePlatform {
 				font-size: 22px;
-				color: #6b7c74;
-				text-shadow:
-					-1px -1px 1px rgba(255, 255, 255, 0.7),
-					1px 1px 1px rgba(0, 0, 0, 0.3),
-					1px 1px 1px rgba(0, 0, 0, 0.7);
+				color: var(--mainColor);
+				text-shadow: var(--neomorphicShadow);
 				transition: color 0.2s ease;
 			}
 		}
@@ -41,15 +46,11 @@
 
 	.gameTitle {
 		margin-top: 10px;
-		font-family: var(--font-playpen), cursive;
 		text-transform: uppercase;
 		font-size: 16px;
 		font-weight: 900;
-		color: #6b7c74;
-		text-shadow:
-			-1px -1px 1px rgba(255, 255, 255, 0.7),
-			1px 1px 1px rgba(0, 0, 0, 0.3),
-			1px 1px 1px rgba(0, 0, 0, 0.7);
+		color: var(--mainColor);
+		text-shadow: var(--neomorphicShadow);
 	}
 
 	.gamePrice {
@@ -57,16 +58,13 @@
 		justify-content: space-between;
 		align-items: center;
 		flex-wrap: wrap;
-		color: #6b7c74;
+		color: var(--mainColor);
 
 		.currentPrice,
 		.price {
 			font-size: 20px;
 			font-weight: 900;
-			text-shadow:
-				-1px -1px 1px rgba(255, 255, 255, 0.7),
-				1px 1px 1px rgba(0, 0, 0, 0.3),
-				1px 1px 1px rgba(0, 0, 0, 0.7);
+			text-shadow: var(--neomorphicShadow);
 		}
 
 		.discount {
@@ -74,13 +72,13 @@
 			border-radius: 10px;
 			font-size: 16px;
 			outline-width: 800;
-			color: #6b7c74;
-			box-shadow: var(--linksBoxShadow);
+			color: var(--mainColor);
+			box-shadow: var(--linksInsetBoxShadow);
 		}
 
 		.prevPrice {
 			text-decoration: line-through;
-			text-decoration-color: #d97736;
+			text-decoration-color: var(--actionColor);
 			text-decoration-thickness: 1px;
 			font-size: 14px;
 		}
@@ -90,27 +88,29 @@
 		position: absolute;
 		left: 0;
 		bottom: 0;
-		color: #d97736;
+		color: var(--actionColor);
 		padding: 10px;
 		width: 40px;
 		height: 40px;
 		display: flex;
 		justify-content: center;
 		align-items: center;
-		border-radius: 0 20px;
+		border-radius: 0 12px;
 		font-size: 20px;
 		box-shadow: var(--linksBoxShadow);
 		transition: 0.3s;
 
 		&:hover {
 			box-shadow: 0 0 0 #2d3531;
-			color: #dfb15b;
-			transform: scale(0.96);
+			color: var(--clickedColor);
+			transform: scale(0.97);
 		}
 
-		&:active {
+		&:active,
+		&.active {
 			box-shadow: var(--linksInsetBoxShadow);
 			transform: scale(0.95);
+			color: var(--clickedColor);
 		}
 	}
 
@@ -118,27 +118,61 @@
 		position: absolute;
 		right: 0;
 		bottom: 0;
-		color: #d97736;
+		color: var(--actionColor);
 		padding: 10px;
 		width: 40px;
 		height: 40px;
 		display: flex;
 		justify-content: center;
 		align-items: center;
-		border-radius: 20px 0;
+		border-radius: 12px 0;
 		font-size: 20px;
 		box-shadow: var(--linksBoxShadow);
 		transition: 0.3s;
 
 		&:hover {
 			box-shadow: 0 0 0 #2d3531;
-			color: #dfb15b;
-			transform: scale(0.96);
+			color: var(--clickedColor);
+			transform: scale(0.97);
 		}
 
-		&:active {
+		&:active,
+		&.active {
 			box-shadow: var(--linksInsetBoxShadow);
 			transform: scale(0.95);
+			color: var(--clickedColor);
 		}
+	}
+
+	&:hover {
+
+		transform: scale(0.96);
+		box-shadow: 0 0 0 transparent;
+		border-color: var(--mainColor);
+		box-shadow: var(--neomorphicShadow);
+
+		img {
+			padding: 0;
+			border: 1px solid var(--mainColor);
+			box-shadow: var(--neomorphicShadow);
+			transition: all 0.3s ease;
+		}
+
+		.like,
+		.addBag {
+			box-shadow: 0 0 0 #2d3531;
+
+			&:active,
+			&.active {
+				box-shadow: var(--linksInsetBoxShadow);
+				transform: scale(0.95);
+				color: var(--clickedColor);
+			}
+		}
+	}
+
+	&:active {
+		box-shadow: var(--linksInsetBoxShadow);
+		transform: scale(0.95);
 	}
 }
