@@ -17,15 +17,15 @@ export default function Home() {
 					<GameSwiper games={gamesData} />
 				</div>
 
-				<div className="row mb-4 mt-4">
-					<div className="col-lg-12">
+				<div className="row mb-4 mt-4 mx-0">
+					<div className="col-lg-12 d-flex justify-content-center">
 						<h2 className={cls.sectionTitle}>
 							Hot Sale <i className="bi bi-fire"></i>
 						</h2>
 					</div>
 				</div>
 
-				<div className="row">
+				<div className="row gy-4 justify-content-center mx-0">
 					{promoGames.map((game) => (
 						<GameCard key={game._id} game={game} />
 					))}

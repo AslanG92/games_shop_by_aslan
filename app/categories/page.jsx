@@ -48,8 +48,8 @@ export default function CategoriesPage() {
 		<Main>
 			<section id="categories" className={`${cls.section} ${cls.active}`}>
 				<div className="container-fluid mt-2">
-					<div className="row">
-						<div className="col-lg-8 d-flex justify-content-start">
+					<div className="row mx-0">
+						<div className="col-lg-12 d-flex justify-content-start">
 							<ul className={cls.filters}>
 								{filters.map((filter) => (
 									<li
@@ -63,21 +63,23 @@ export default function CategoriesPage() {
 							</ul>
 						</div>
 
-						<div className="col-lg-4 d-flex justify-content-start justify-content-lg-end mt-3 mt-lg-0">
-							<div className={cls.search}>
-								<i className="bi bi-search"></i>
-								<input
-									type="text"
-									name="search"
-									value={text}
-									placeholder="Search..."
-									onChange={handleSearchGames}
-								/>
+						<div className="row mx-0">
+							<div className="col-lg-12 d-flex justify-content-start mt-2 ps-0">
+								<div className={cls.search}>
+									<i className="bi bi-search"></i>
+									<input
+										type="text"
+										name="search"
+										value={text}
+										placeholder="Search..."
+										onChange={handleSearchGames}
+									/>
+								</div>
 							</div>
 						</div>
 					</div>
 
-					<div className="row">
+					<div className="row gy-4 justify-content-center mx-0">
 						{data.map((game) => (
 							<GameCard key={game._id} game={game} />
 						))}

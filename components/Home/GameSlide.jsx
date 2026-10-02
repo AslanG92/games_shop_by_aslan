@@ -24,6 +24,10 @@ export default function GameSlide({ game }) {
 						allowFullScreen
 						src={`${game.video}?autoplay=1&enablejsapi=1`}
 					></iframe>
+
+					<button className={cls.mobileCloseVideo} onClick={toggleVideo} aria-label="Close video">
+						<i className="bi bi-x-lg"></i>
+					</button>
 				</div>
 			)}
 

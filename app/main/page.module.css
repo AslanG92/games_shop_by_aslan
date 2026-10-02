@@ -4,7 +4,7 @@
 	right: 0;
 	bottom: 0;
 	left: 0;
-	padding: 30px;
+	padding: 20px;
 	border: 8px solid var(--bgColor);
 	background: var(--bgColor);
 	box-shadow: var(--mainBoxShadow);
@@ -29,5 +29,24 @@
 		position: relative;
 		width: 93%;
 		transition: 0.6s;
+	}
+}
+
+@media (max-width: 768px) {
+
+	.banner {
+		width: 100% !important;
+		left: 0 !important;
+		padding: 80px 15px 20px 15px !important;
+		transition: none;
+		border-radius: 0 !important;
+		box-shadow: none !important;
+
+		&.active {
+			width: 100% !important;
+			transform: none !important;
+			border-radius: 0 !important;
+			box-shadow: none !important;
+		}
 	}
 }

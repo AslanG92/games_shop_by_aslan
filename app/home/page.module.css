@@ -1,9 +1,10 @@
 .home {
 	overflow: hidden;
 	position: absolute;
-	width: 100%;
+	left: 0;
+	right: 0;
 	top: 100vh;
-	padding: 0 30px;
+	padding: 0 20px 30px 20px;
 	bottom: 0;
 	opacity: 0;
 	transition: 1s ease-in-out;
@@ -11,14 +12,21 @@
 	z-index: 1000;
 
 	.sectionTitle {
+		display: flex;
+		justify-content: center;
+		width: 100%;
 		text-transform: uppercase;
+		align-items: center;
 		color: var(--bgColor);
 		font-family: var(--font-inter), sans-serif;
 		font-weight: 900;
-		font-size: 46px;
+		font-size: 50px;
 		letter-spacing: 1px;
 		text-shadow: var(--heading3DShadow);
 
+		i {
+			margin-left: 15px;
+		}
 	}
 
 	.viewMore {
@@ -56,4 +64,34 @@
 		opacity: 1;
 		transform: translateY(0);
 	}
+}
+
+@media (max-width: 768px) {
+	.home {
+		padding: 0 10px 30px 10px !important;
+	}
+
+	.sectionTitle {
+		font-size: 40px !important;
+	}
+
+
+}
+
+@media (max-width: 500px) {
+	.sectionTitle {
+		font-size: 30px !important;
+	}
+
+}
+
+@media (max-width: 360px) {
+	.sectionTitle {
+		font-size: 28px !important;
+
+		i {
+			margin-left: 10px !important;
+		}
+	}
+
 }

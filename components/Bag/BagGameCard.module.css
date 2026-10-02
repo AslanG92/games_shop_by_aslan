@@ -1,18 +1,19 @@
 .bagCard {
 	background: var(--bgColor);
 	box-shadow: var(--linksBoxShadow);
-	border-radius: 12px;
-	padding: 15px 20px;
+	border: 1px solid transparent;
+	border-radius: 16px;
+	padding: 20px 30px;
 	transition: 0.3s ease;
 	width: 100%;
 
 	.bagImg {
-		width: 100px;
-		height: 70px;
+		width: 160px;
+		height: 100px;
 		object-fit: cover;
-		border-radius: 6px;
+		border-radius: 10px;
 		background: var(--bgColor);
-		padding: 3px;
+		padding: 4px;
 		box-shadow: var(--linksInsetBoxShadow);
 		border: 1px solid rgba(255, 255, 255, 0.1);
 		transition: transform 0.3s ease, box-shadow 0.3s ease;
@@ -21,66 +22,68 @@
 	.bagTitle {
 		font-family: var(--font-playpen), cursive;
 		text-transform: uppercase;
-		font-size: 16px;
+		font-size: 20px;
 		font-weight: 400;
-		color: #6b7c74;
+		color: var(--mainColor);
 		text-shadow: var(--neomorphicShadow);
 	}
 
 	.bagPlatform {
-		font-size: 16px;
-		color: #6b7c74;
+		font-size: 18px;
+		color: var(--mainColor);
 		text-shadow: var(--neomorphicShadow);
 		transition: color 0.2s ease;
 	}
 
 	.currentPrice {
-		font-size: 18px;
-		font-weight: 900;
-		color: #6b7c74;
+		font-size: 22px;
+		font-weight: 400;
+		color: var(--mainColor);
 		text-shadow: -1px -1px 1px rgba(255, 255, 255, 0.7), 1px 1px 1px rgba(0, 0, 0, 0.3);
 	}
 
 	.prevPrice {
-		font-size: 12px;
+		font-size: 14px;
 		text-decoration: line-through;
-		color: #dfb15b;
+		color: var(--clickedColor);
 	}
 
 	.deleteBtn {
 		background: none;
 		border: none;
-		color: #d97736;
-		font-size: 20px;
+		color: var(--actionColor);
+		font-size: 22px;
 		cursor: pointer;
-		padding: 8px;
+		padding: 10px;
 		display: flex;
 		align-items: center;
 		justify-content: center;
-		border-radius: 8px;
+		border-radius: 10px;
 		box-shadow: var(--linksBoxShadow);
-		transition: 0.3s;
+		transition: all 0.3s;
 
 		&:hover {
 			box-shadow: 0 0 0 #2d3531;
-			color: #dfb15b;
+			color: var(--clickedColor);
 			transform: scale(0.95);
 		}
 
 		&:active {
-			box-shadow: var(--linksInsetBoxShadow);
+			background: var(--bgColor) !important;
+			box-shadow: var(--linksInsetBoxShadow) !important;
+			transform: scale(0.9) !important;
 		}
 	}
 
 	&:hover {
-		transform: scale(0.97);
+		transform: scale(0.98);
 		box-shadow: 0 0 0 transparent;
-		border-color: #6b7c74;
+		border-color: var(--mainColor);
 		box-shadow: var(--neomorphicShadow);
 
 		img {
 			padding: 0;
-			border: 1px solid #6b7c74;
+			border: 1px solid var(--mainColor);
 			box-shadow: var(--neomorphicShadow);
 			transition: all 0.3s ease;
 		}
@@ -89,5 +92,114 @@
 			box-shadow: 0 0 0 #2d3531;
 		}
 	}
+}
 
+
+
+@media (max-width: 950px) {
+	.bagCard {
+		flex-direction: column;
+		align-items: flex-start !important;
+		gap: 12px;
+		padding: 12px 15px !important;
+
+		&:hover {
+			transform: scale(0.99) !important;
+		}
+
+		&>div:first-child {
+			width: 100%;
+			align-items: center !important;
+		}
+
+		&>div:last-child {
+			width: 100%;
+			justify-content: space-between !important;
+			flex-direction: row-reverse;
+			align-items: center !important;
+			border-top: 1px solid rgba(255, 255, 255, 0.1);
+			padding-top: 15px;
+		}
+
+		&:hover {
+			&>div:last-child {
+				border-top: 1px solid var(--mainColor) !important;
+			}
+		}
+	}
+
+	.bagImg {
+		width: 250px !important;
+		height: 150px !important;
+	}
+
+	.bagTitle {
+		font-size: 14px !important;
+	}
+
+	.currentPrice {
+		font-size: 16px !important;
+	}
+
+	.deleteBtn {
+		font-size: 25px !important;
+		padding: 6px 12px !important;
+		border-radius: 10px !important;
+	}
+}
+
+@media (max-width: 700px) {
+	.bagImg {
+		width: 200px !important;
+		height: 120px !important;
+	}
+}
+
+@media (max-width: 600px) {
+	.bagImg {
+		width: 170px !important;
+		height: 120px !important;
+	}
+}
+
+@media (max-width: 500px) {
+	.bagCard {
+		padding: 15px 12px !important;
+		gap: 15px !important;
+
+		&>div:first-child {
+			flex-direction: column !important;
+			align-items: center !important;
+			text-align: center !important;
+			gap: 12px !important;
+			width: 100% !important;
+
+			&>div {
+				display: flex !important;
+				flex-direction: column !important;
+				align-items: center !important;
+				width: 100% !important;
+			}
+		}
+
+		&>div:last-child {
+			margin-top: 5px !important;
+			padding-top: 12px !important;
+		}
+	}
+
+	.bagImg {
+		width: 200px !important;
+		height: 150px !important;
+		margin-right: 0 !important;
+	}
+
+	.bagTitle {
+		font-size: 15px !important;
+		font-weight: 900 !important;
+	}
+
+	.bagPlatform {
+		font-size: 16px !important;
+	}
 }

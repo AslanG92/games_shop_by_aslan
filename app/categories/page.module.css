@@ -1,9 +1,10 @@
 .section {
 	overflow: hidden;
 	position: absolute;
-	width: 100%;
+	left: 0;
+	right: 0;
 	bottom: 0;
-	padding: 0 30px 0 30px;
+	padding: 0 20px 30px 20px;
 	z-index: 1000;
 
 	.filters {
@@ -20,13 +21,14 @@
 			border-radius: 10px;
 			text-transform: uppercase;
 			cursor: pointer;
-			transition: 0.3s;
 			box-shadow: var(--linksBoxShadow);
+			transform: scale(1);
+			transition: box-shadow 0.2s ease-in-out, transform 0.15s ease-in-out, color 0.2s ease-in-out;
 
 			&:hover {
-				box-shadow: 0 0 0 #2d3531;
+				box-shadow: 0 0 0 transparent;
 				color: var(--clickedColor);
-				transform: scale(0.97);
+				transform: scale(0.98);
 			}
 
 			&.active {
@@ -117,3 +119,73 @@
 		transform: translateY(0);
 	}
 }
+
+@media (max-width: 1650px) {
+	.section {
+		h4 {
+			font-size: 26px !important;
+		}
+
+		.search {
+			width: 260px !important;
+			height: 40px !important;
+			padding: 6px 15px !important;
+			margin: 35px 0 25px 0 !important;
+
+			input {
+				font-size: 16px !important;
+			}
+		}
+
+		.filters {
+			gap: 15px !important;
+			margin: 15px 0 25px 0 !important;
+
+			li {
+				padding: 8px 16px !important;
+				font-size: 14px !important;
+				border-radius: 8px !important;
+			}
+		}
+	}
+}
+
+@media (max-width: 1000px) {
+	.section {
+		h4 {
+			font-size: 22px !important;
+			margin-bottom: 10px !important;
+		}
+
+		.search {
+			width: 220px !important;
+			height: 38px !important;
+			padding: 4px 12px !important;
+
+			input {
+				font-size: 14px !important;
+			}
+		}
+
+		.filters {
+			gap: 12px !important;
+			margin: 10px 0 20px 0 !important;
+
+			li {
+				padding: 6px 12px !important;
+				font-size: 12px !important;
+				border-radius: 6px !important;
+			}
+		}
+	}
+}
+
+@media (max-width: 768px) {
+	.section {
+		padding: 0 10px 30px 10px !important;
+	}
+}
+
+@media (max-width: 480px) {}
+
+@media (max-width: 400px) {}

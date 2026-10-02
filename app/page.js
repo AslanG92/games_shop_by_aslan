@@ -1,4 +1,3 @@
-"use client";
 import Main from "@/app/main/page";
 import HomePage from "@/app/home/page";
 

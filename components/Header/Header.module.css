@@ -6,20 +6,26 @@
 	display: flex;
 	justify-content: space-between;
 	align-items: center;
-	padding: 20px 30px;
+	padding: 15px 30px;
+	border-radius: 20px;
 	z-index: 1000 !important;
-	background: transparent;
+	background: var(--bgColor);
+	box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+	transition: box-shadow 0.3s ease;
 
 	.menu {
 		padding: 5px 15px;
-		border-radius: 12px;
+		border-radius: 15px;
 		font-size: 30px;
 		color: var(--actionColor);
 		box-shadow: var(--linksBoxShadow);
+		transform: scale(1);
+		transition: box-shadow 0.2s ease-in-out, transform 0.15s ease-in-out, color 0.2s ease-in-out;
 
 		&:hover {
 			box-shadow: 0 0 0 #2d3531;
 			color: var(--clickedColor);
+			transform: scale(0.97);
 		}
 
 		&:active {
@@ -40,7 +46,7 @@
 			font-size: 25px;
 			width: 50px;
 			height: 50px;
-			border-radius: 10px;
+			border-radius: 15px;
 			box-shadow: var(--linksInsetBoxShadow);
 			display: flex;
 			cursor: default;
@@ -59,7 +65,7 @@
 				font-weight: 600;
 				width: 20px;
 				height: 20px;
-				color: var(--mainColor);
+				color: var(--clickedColor);
 				background: rgba(255, 255, 255, 0.4);
 				border-radius: 50%;
 				display: flex;
@@ -75,17 +81,40 @@
 			display: flex;
 			align-items: center;
 			gap: 15px;
-			border-radius: 10px;
+			border-radius: 15px;
 			box-shadow: var(--linksInsetBoxShadow);
 
 			a {
 				font-size: 30px;
 				cursor: default;
+				display: flex;
+				align-items: center;
+				justify-content: center;
+				height: 100%;
 
 				img {
 					width: 35px;
 					height: 35px;
 					border-radius: 50%;
+					cursor: pointer;
+					transition: all 0.3s ease;
+					box-shadow:
+						0 0 0 transparent,
+						0 0 5px rgba(217, 119, 54, 0.9),
+						0 0 5px rgba(217, 119, 54, 0.9) !important;
+
+					&:hover {
+						transform: scale(0.97);
+						box-shadow:
+							0 0 0 transparent,
+							0 0 5px rgba(223, 177, 91, 0.9),
+							0 0 5px rgba(223, 177, 91, 0.9) !important;
+					}
+
+					&:active {
+						transform: scale(0.9);
+						border: 1px solid var(--clickedColor);
+					}
 				}
 
 			}
@@ -95,14 +124,93 @@
 				flex-direction: column;
 
 				span {
-					color: var(--mainColor);
-					font-size: 11px;
+					color: var(--clickedColor);
+					font-size: 13px;
 				}
 
 				a {
-					font-size: 9px;
+					font-size: 10px;
 					text-decoration: underline;
-					color: var(--mainColor);
+					color: var(--actionColor);
+					cursor: pointer;
+					transition: all 0.3s ease;
+
+					&:hover {
+						transform: scale(0.94);
+					}
+				}
+			}
+		}
+	}
+}
+
+@media (max-width: 768px) {
+	.header {
+		position: absolute;
+		top: 0;
+		left: 0;
+		right: 0;
+		width: 100%;
+		background: var(--bgColor);
+		padding: 15px 20px;
+		z-index: 10000 !important;
+		display: flex;
+		justify-content: space-between;
+		align-items: center;
+		box-shadow: var(--sectionBoxShadow);
+
+		.menu {
+			font-size: 24px;
+			padding: 5px 12px;
+		}
+
+		.userItems {
+			gap: 15px;
+
+			.icon {
+				width: 44px;
+				height: 44px;
+				font-size: 20px;
+			}
+		}
+	}
+}
+
+@media (max-width: 500px) {
+	.header {
+		padding: 10px 15px;
+
+		.userItems {
+			gap: 8px;
+
+			.icon {
+				width: 50px !important;
+				height: 50px !important;
+				font-size: 20px !important;
+				border-radius: 15px !important;
+			}
+
+			.avatar {
+				width: 50px !important;
+				height: 50px !important;
+				padding: 10px !important;
+				justify-content: center;
+				align-items: center;
+
+				a {
+					height: 100%;
+					display: flex;
+					align-items: center;
+					justify-content: center;
+
+					img {
+						width: 32px;
+						height: 32px;
+					}
+				}
+
+				.user {
+					display: none !important;
 				}
 			}
 		}
