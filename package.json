@@ -4,7 +4,7 @@
 	"private": true,
 	"scripts": {
 		"dev": "next dev",
-		"build": "npx --legacy-peer-deps @opennextjs/cloudflare@latest build",
+		"build": "next build",
 		"start": "next start",
 		"lint": "eslint"
 	},
@@ -18,7 +18,6 @@
 		"zustand": "^5.0.15"
 	},
 	"devDependencies": {
-		"@opennextjs/cloudflare": "^1.20.8",
 		"babel-plugin-react-compiler": "1.0.0",
 		"eslint": "^9",
 		"eslint-config-next": "16.3.6"
