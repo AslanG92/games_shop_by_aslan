@@ -4,7 +4,7 @@
 	"private": true,
 	"scripts": {
 		"dev": "next dev",
-		"build": "npx @opennextjs/cloudflare@latest build",
+		"build": "npx --legacy-peer-deps @opennextjs/cloudflare@latest build",
 		"start": "next start",
 		"lint": "eslint"
 	},
