@@ -3,7 +3,6 @@ const nextConfig = {
 	/* config options here */
 	reactCompiler: true,
 	devIndicators: false,
-	output: "export",
 };
 
 export default nextConfig;
